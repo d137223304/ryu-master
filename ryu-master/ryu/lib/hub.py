@@ -31,7 +31,8 @@ if HUB_TYPE == 'eventlet':
     # HACK:
     # sleep() is the workaround for the following issue.
     # https://github.com/eventlet/eventlet/issues/401
-    eventlet.sleep()
+    # This is removed assuming a modern eventlet version is used.
+    # eventlet.sleep()
     import eventlet.event
     import eventlet.queue
     import eventlet.semaphore
